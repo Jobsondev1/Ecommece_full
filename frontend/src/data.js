@@ -19,7 +19,7 @@ const data = {
             image: '/images/blue-jeans.jpg',
             price: 120,
             brand: 'jensfamini',
-            rating: 5,
+            rating: 4.8,
             numReviews: 15,
             description: ' jeans feminino elegante'
         },
@@ -43,7 +43,7 @@ const data = {
             image: '/images/brown-men.jpg',
             price: 300,
             brand: 'Adidas',
-            rating: 5,
+            rating: 4.8,
             numReviews: 10,
             description: '  Tenis Adidas esporte fino'
         },
@@ -55,7 +55,7 @@ const data = {
             image: '/images/gray-basic.jpg',
             price: 200,
             brand: 'new jens',
-            rating: 4.5,
+            rating: 3.8,
             numReviews: 12,
             description: '  Calsa feminina jens azul'
         },
@@ -79,7 +79,7 @@ const data = {
             image: '/images/torn-jeans.jpg',
             price: 250,
             brand: 'boy',
-            rating: 4.5,
+            rating: 4.0,
             numReviews: 10,
             description: 'Calsa masculina azul '
         },
