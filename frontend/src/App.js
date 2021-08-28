@@ -1,8 +1,11 @@
 import './App.css';
-import Products from './components/products/Products';
-import data from './data';
+import {BrowserRouter, Route} from 'react-router-dom'
+import ProductScreen from './screens/ProductScreen/ProductScreen';
+import HomeScreen from './screens/homeScreen/HomeScreen';
+
 function App() {
   return (
+    <BrowserRouter>
     <div className="grid-container">
      <header className="row">
        <div>
@@ -17,16 +20,13 @@ function App() {
      </header>
 
      <main>
-       <div>
-         <div className="row center">
-           {data.products.map((product)=>(
-             <Products key={product._id} product={product}></Products>
-           ))}
-         </div>
-       </div>
+       <Route path="/product/:id" component={ProductScreen}></Route>
+       <Route path="/" component={HomeScreen} exact></Route>    
      </main>
+
      <footer className="row center">Ecommece produção job</footer>
     </div>
+    </BrowserRouter>
   );
 }
 

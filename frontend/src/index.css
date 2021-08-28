@@ -129,6 +129,7 @@ a.brand {
 }
 .col-1 {
   flex: 1 1 25rem;
+  margin-left: 1rem;
 }
 .col-2 {
   flex: 2 1 50rem;
@@ -197,7 +198,21 @@ img.large {
 }
 
 /* Card */
-
+.card {
+    border: 0.1rem #c0c0c0 solid;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    margin: 1rem;
+  }
+  .card-body {
+    padding: 1rem;
+  }
+  .card-body > * {
+    margin-bottom: 0.5rem;
+  }
+  .price {
+    font-size: 2rem;
+  }
 /* Rating */
 
 /* Alert */
@@ -209,6 +224,9 @@ img.large {
 }
 .danger {
   color: #a02020;
+}
+.error{
+  color: #eb0000;;
 }
 .alert {
   padding: 1rem;
