@@ -5,7 +5,7 @@
   "description": "ecommece",
   "main": "index.js",
 "scripts": {
-  "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  "dev": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
 },
 
   "repository": "https://github.com/Jobsondev1/Ecommece_full.git",
