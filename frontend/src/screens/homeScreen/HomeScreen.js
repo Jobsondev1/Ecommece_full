@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Products from '../../components/products/Products';
 import LoadingBox from '../../components/loadingBox/LoadingBox';
-import MenssageBox from '../../components/messageBox/MessageBox';
+import MessageBox from '../../components/messageBox/MessageBox';
 
 
 const HomeScreen = () => {
@@ -28,7 +28,7 @@ const HomeScreen = () => {
         {loading ? (
           <LoadingBox></LoadingBox>
         ) : error ? (
-          <MenssageBox variant="danger">{error}</MenssageBox>
+          <MessageBox variant="danger">{error}</MessageBox>
         ) : (
           <div className="row center">
             {products.map((product) => (

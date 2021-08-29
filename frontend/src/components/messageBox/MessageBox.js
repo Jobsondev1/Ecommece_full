@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MenssageBox = (props) => {
+const MessageBox = (props) => {
     return (
         <div className={`alert alert-${props.variant || 'info'}`}>
         {props.children}
@@ -8,4 +8,4 @@ const MenssageBox = (props) => {
     )
 }
 
-export default MenssageBox
+export default MessageBox

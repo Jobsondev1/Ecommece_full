@@ -4,10 +4,9 @@
   "version": "1.0.0",
   "description": "ecommece",
   "main": "index.js",
-"scripts": {
-  "dev": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
-},
-
+  "scripts": {
+    "dev": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
   "repository": "https://github.com/Jobsondev1/Ecommece_full.git",
   "author": "jobsondev1 <jammeloalves@gmail.com>",
   "license": "MIT",
@@ -17,6 +16,8 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.25.0",
     "nodemon": "^2.0.12"
   }
 }
