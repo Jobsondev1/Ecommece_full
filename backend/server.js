@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 //require("dotenv").config();
 
 import express from 'express';
@@ -17,6 +18,14 @@ app.use(morgan('dev'))
 
 app.use(express.json());
 
+app.get('/api/products/:id', (req, res) => {
+    const product = data.products.find((x) => x._id === req.params.id);
+    if (product) {
+      res.send(product);
+    } else {
+      res.status(404).send({ message: 'Produto nao emcontrado' });
+    }
+  });
 app.get('/api/products', (req, res)=>{
     res.send(data.products);
 })
