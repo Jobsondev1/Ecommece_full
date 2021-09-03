@@ -1,13 +1,14 @@
-    1. Introdução a este curso
-        i. o que você vai construir
-        ii. o que você vai aprender
-        iii. quem são as audiências
+    1. Introdução do Projeto
+        i. uma loja virtual
+        ii. frontend (reactjs, reudux, )
+        iii. Backend (node js,)
+        iv. banco não relaciona (mongodb)
     2. Ferramentas de instalação
         i. Editor de Código
         ii. Navegador da web
         iii. Extensão de código VS
     3. Modelo de site
-        i. Criar pasta amazona
+        i. Criar pasta Ecommece_full
         ii. criar pasta de modelos
         iii. criar index.html
         iv. adicionar código HTML padrão
@@ -106,7 +107,7 @@
         iii. mostrar imagem, nome, quantidade e preço do item
         iv. Prossiga para o botão Check-out
         v. Implementar ação remover do carrinho
-    17. Implementar ação Remover do Carrinho
+    17. Implementar ação Remover itens do Carrinho
         i. criar constantes removeFromCart, ações e redutores
         ii. adicionar redutor a store.js
         iii. usar ação em CartScreen.js
