@@ -10,10 +10,14 @@ import userRouter from './src/routes/userRouter.js';
 import productRouter from './src/routes/productRouter.js';
 
 
-
+dotenv.config();
 
 const app = express();
-dotenv.config();
+
+//connectToDatabase();
+app.use(morgan('dev'))
+
+app.use(express.json());
 
 mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
@@ -21,21 +25,6 @@ mongoose.connect(process.env.DATABASE_URL, {
   useFindAndModify: false,
   useCreateIndex: true
 });
-
-
-//connectToDatabase();
-app.use(morgan('dev'))
-
-app.use(express.json());
-/*
-app.get('/api/products/:id', (req, res) => {
-    const product = data.products.find((x) => x._id === req.params.id);
-    if (product) {
-      res.send(product);
-    } else {
-      res.status(404).send({ message: 'Produto nao emcontrado' });
-    }
-  });*/
 
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
