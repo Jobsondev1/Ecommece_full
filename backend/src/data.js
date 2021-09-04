@@ -18,7 +18,6 @@ const data = {
 
     products:[
         {
-            _id: '1',
             name: 'black-shoes',
             category: 'tenis',
             image: '/images/black-shoes.jpg',
@@ -31,7 +30,6 @@ const data = {
         },
 
         {
-            _id: '2',
             name: 'blue-jeans',
             category: 'Calsa feminina',
             image: '/images/blue-jeans.jpg',
@@ -44,7 +42,6 @@ const data = {
         },
 
         {
-            _id: '3',
             name: 'brown-basic',
             category: 'roupa',
             image: '/images/brown-basic.jpg',
@@ -57,7 +54,6 @@ const data = {
         },
 
         {
-            _id: '4',
             name: 'brown-men',
             category: 'tenis',
             image: '/images/brown-men.jpg',
@@ -70,7 +66,6 @@ const data = {
         },
 
         {
-            _id: '5',
             name: 'gray-basic',
             category: 'Calsa feninina',
             image: '/images/gray-basic.jpg',
@@ -83,7 +78,6 @@ const data = {
         },
 
         {
-            _id: '6',
             name: 'spring-jacket',
             category: 'Jaqueta',
             image: '/images/spring-jacket.jpg',
@@ -96,7 +90,6 @@ const data = {
         },
 
         {
-            _id: '7',
             name: 'torn-jeans',
             category: 'calsa jeans',
             image: '/images/torn-jeans.jpg',
