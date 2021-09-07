@@ -18,6 +18,7 @@ import { userRegisterReducer, userSigninReducer } from './reducers/userReducers'
             shippingAddress: localStorage.getItem('shippingAddress')
             ? JSON.parse(localStorage.getItem('shippingAddress'))
             :{},
+            paymentMethod: 'paypal',
         },
       };
 const reducer = combineReducers({
