@@ -8,6 +8,7 @@ import mongoose from 'mongoose';
 //import routes from './routes'.js;
 import userRouter from './src/routes/userRouter.js';
 import productRouter from './src/routes/productRouter.js';
+import orderRouter from './src/routes/oderRouter.js';
 
 
 dotenv.config();
@@ -28,6 +29,7 @@ mongoose.connect(process.env.DATABASE_URL, {
 
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
+app.use('/api/orders', orderRouter);
 
 app.get('/', (req, res)=>{
     res.send('sevidor rodando');

@@ -168,6 +168,7 @@
         ii. criar orderModel
         iii. criar orderRouter
         iv. criar rota de pedido de postagem
+        v. criar verificação do token no (utils)
     28. Implementar ação PlaceOrder
         i. lidar com colocar pedido botão clique
         ii. criar constantes de ordem de colocação, ação e redutor

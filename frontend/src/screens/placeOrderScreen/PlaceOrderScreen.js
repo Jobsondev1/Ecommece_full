@@ -65,7 +65,7 @@ const PlaceOrderScreen = (props) => {
                         </div>
 
                         <div>
-                          {item.qty} x ${item.price} = ${item.qty * item.price}
+                          {item.qty} x R$: {item.price} = R$: {item.qty * item.price}
                         </div>
                       </div>
                     </li>
@@ -84,19 +84,19 @@ const PlaceOrderScreen = (props) => {
               <li>
                 <div className="row">
                   <div>Itens</div>
-                  <div>${cart.itemsPrice.toFixed(2)}</div>
+                  <div>R$: {cart.itemsPrice.toFixed(2)}</div>
                 </div>
               </li>
               <li>
                 <div className="row">
                   <div>Envio</div>
-                  <div>${cart.shippingPrice.toFixed(2)}</div>
+                  <div>R$: {cart.shippingPrice.toFixed(2)}</div>
                 </div>
               </li>
               <li>
                 <div className="row">
                   <div>Taxa</div>
-                  <div>${cart.taxPrice.toFixed(2)}</div>
+                  <div>R$: {cart.taxPrice.toFixed(2)}</div>
                 </div>
               </li>
               <li>
@@ -105,7 +105,7 @@ const PlaceOrderScreen = (props) => {
                     <strong>Total do pedido</strong>
                   </div>
                   <div>
-                    <strong>${cart.totalPrice.toFixed(2)}</strong>
+                    <strong>R$: {cart.totalPrice.toFixed(2)}</strong>
                   </div>
                 </div>
               </li>
