@@ -185,7 +185,8 @@
         iii. criar formulário de rota / api / paypal / clientId
         iv. crie getPaypalClientID em api.js
         v. adicionar script de checkout paypal em OrderScreen.js
-        vi. mostrar botão paypal
+        vi. instalando o pacote react-paypal-button-v2
+        vii. mostrar botão paypal
     31. Implementar pagamento de pedido
         i. atualizar pedido após o pagamento
         ii. crie payOrder em api.js
